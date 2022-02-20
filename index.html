@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="https://unpkg.com/open-props/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <main>
+        <form action="/" method="GET">
+            <section>
+                <ul>
+                    <h2>How can we help you</h2>
+                    <li>
+                        <label for="name">Your Name : </label>
+                        <input type="text" name="name" id="name1" required>
+                    </li>
+                    <li>
+                        <label for="email">Your Email Address : </labe>
+                            <input type="email" name="email" id="email"  required>
+                    </li>
+                    <li>
+                        <label for="phone">Your Phone Number : </label>
+                        <input type="tel" name="phone" id="phone"  required>
+                    </li>
+                    <li>
+                        <label for="message">Your Message : </label>
+                        <textarea name="message" id="message" cols="30" rows="10" maxlength="200"
+                           ></textarea>
+                    </li>
+                </ul>
+                <label for="find-us">How did you find us?</label>
+                <select name="find-us" id="find-us">
+                    <option value="">Select One</option>
+                    <option value="search-engine">Web Search</option>
+                    <option value="World-of-mouth">World of mouth</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            <section>
+                <ul>
+                    <h2>How should we reply?</h2>
+                    <li class="form-control-inline">
+                        <input type="radio" name="reply" id="call-me" required>
+                        <label for="call-me">Call me</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="reply" id="sendmemail" required>
+                        <label for="sendmemail">Send me an email</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="reply" id="dontreply" required>
+                        <label for="dontreply">Do not reply</label>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+            </section>
+            <section id="buttons">
+                <button type="reset" id="clear-button">Clear</button>
+                <button type="submit" id="submit">Submit</button>
+            </section>
+        </form>
+        <section id="proggress">
+         <div class="container">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle"><i class="fa fa-text"></i>></div>
+        <div class="circle"><i class="fa fa-at"></i></div>
+        <div class="circle"><i class="fa fa-phone"></i></div>
+      </div>
+    </section>
+    </div>
+    </main>
+</body>
+
+</html>
